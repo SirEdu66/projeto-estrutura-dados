@@ -1,0 +1,13 @@
+# Compilacao
+build/
+*.o
+*.exe
+a.out
+sistema_redes
+
+# Editores
+.vscode/
+.idea/
+
+# Outros
+*.log
