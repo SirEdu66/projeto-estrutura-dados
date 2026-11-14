@@ -1,0 +1,51 @@
+1
+50
+Roteador Core
+Roteador
+Rack Principal
+1
+30
+Switch B
+Switch
+Sala 2
+1
+70
+Firewall Perimetro
+Firewall
+Data Center
+1
+20
+Access Point 1
+Access Point
+Corredor A
+1
+40
+Switch B
+Switch
+Sala 1
+1
+60
+Modem Fibra
+Modem
+Entrada
+1
+80
+Servidor DNS
+Servidor
+Data Center
+4
+6
+8
+5
+4
+3
+20
+3
+30
+3
+50
+3
+99
+4
+7
+0
