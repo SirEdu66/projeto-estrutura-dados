@@ -23,7 +23,7 @@ int bst_inserir(No **raiz, Equipamento e) {
     if (e.id > (*raiz)->dado.id) {
         return bst_inserir(&(*raiz)->dir, e);
     }
-    return 0; /* ID duplicado */
+    return 0; 
 }
 
 No *bst_buscar(No *raiz, int id) {
@@ -49,8 +49,6 @@ int bst_remover(No **raiz, int id) {
     if (id > (*raiz)->dado.id) {
         return bst_remover(&(*raiz)->dir, id);
     }
-
-    /* Encontrou o no */
     if ((*raiz)->esq == NULL && (*raiz)->dir == NULL) {
         free(*raiz);
         *raiz = NULL;
