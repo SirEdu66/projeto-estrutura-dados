@@ -9,7 +9,6 @@
 static void descartar_resto_linha(void) {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {
-        /* descarta excesso do buffer */
     }
 }
 
@@ -34,12 +33,10 @@ int ler_texto(const char *msg, char *dest, int tam) {
         descartar_resto_linha();
         return 0;
     }
-
-    /* Remove \n e eventual \r (CRLF) */
     buf[strcspn(buf, "\r\n")] = '\0';
 
     len = strlen(buf);
-    if (len >= (size_t)tam) { /* maior que 79 caracteres quando tam = 80 */
+    if (len >= (size_t)tam) {
         return 0;
     }
 
